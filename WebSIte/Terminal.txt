@@ -1,0 +1,267 @@
+C:\Users\Kobi
+λ cd Go
+Go_projects\   Google Drive\
+C:\Users\Kobi
+λ cd Go
+Go_projects\   Google Drive\
+C:\Users\Kobi
+λ cd Go_projects\
+.git\        GoWorkshop\
+C:\Users\Kobi
+λ cd Go_projects\GoWorkshop\
+
+C:\Users\Kobi\Go_projects\GoWorkshop (master)
+λ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Go_Workshop/.idea/workspace.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Kobi\Go_projects\GoWorkshop (master)
+λ vim .\gitignore
+
+C:\Users\Kobi\Go_projects\GoWorkshop (master)
+λ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Go_Workshop/.idea/workspace.xml
+        modified:   gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\Kobi\Go_projects\GoWorkshop (master)
+λ cd c:\Go\
+
+c:\Go
+λ export GOPATH=${HOME}/go
+'export' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\Go
+λ SET GOPATH=c:\go\bin
+
+c:\Go
+λ SET GOPATH=%userprofile%\GO
+
+c:\Go
+λ ls -ltr
+total 170
+-rw-r--r-- 1 Kobi 197609  1638 Jul 18 16:24 README.md
+-rw-r--r-- 1 Kobi 197609  1303 Jul 18 16:24 PATENTS
+-rw-r--r-- 1 Kobi 197609  1479 Jul 18 16:24 LICENSE
+-rw-r--r-- 1 Kobi 197609 34519 Jul 18 16:24 CONTRIBUTORS
+-rw-r--r-- 1 Kobi 197609  1168 Jul 18 16:24 CONTRIBUTING.md
+-rw-r--r-- 1 Kobi 197609 25187 Jul 18 16:24 AUTHORS
+-rw-r--r-- 1 Kobi 197609    26 Jul 18 16:24 robots.txt
+-rw-r--r-- 1 Kobi 197609  1150 Jul 18 16:24 favicon.ico
+-rw-r--r-- 1 Kobi 197609     7 Jul 18 16:25 VERSION
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:53 blog/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:53 lib/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:53 pkg/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 api/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 bin/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 misc/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 src/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 doc/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 18:54 test/
+drwxr-xr-x 1 Kobi 197609     0 Sep 14 19:01 IdeaPlugin/
+
+c:\Go
+λ cd C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go build
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ ls -lrt
+total 2382
+-rw-r--r-- 1 Kobi 197609     445 Sep 18 09:26 Go_Workshop.iml
+-rw-r--r-- 1 Kobi 197609     211 Sep 18 09:47 test.go
+-rwxr-xr-x 1 Kobi 197609 2435584 Sep 18 09:50 Go_Workshop.exe*
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ .\Go_Workshop.exe
+Hello, World!
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ ls -ltr
+total 2382
+-rw-r--r-- 1 Kobi 197609     445 Sep 18 09:26 Go_Workshop.iml
+-rw-r--r-- 1 Kobi 197609     211 Sep 18 09:47 test.go
+-rwxr-xr-x 1 Kobi 197609 2435584 Sep 18 09:50 Go_Workshop.exe*
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go run test.go
+Hello, World!
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ vim test.go
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go help
+Go is a tool for managing Go source code.
+
+Usage:
+
+        go command [arguments]
+
+The commands are:
+
+        build       compile packages and dependencies
+        clean       remove object files
+        doc         show documentation for package or symbol
+        env         print Go environment information
+        fix         run go tool fix on packages
+        fmt         run gofmt on package sources
+        generate    generate Go files by processing source
+        get         download and install packages and dependencies
+        install     compile and install packages and dependencies
+        list        list packages
+        run         compile and run Go program
+        test        test packages
+        tool        run specified go tool
+        version     print Go version
+        vet         run go tool vet on packages
+
+Use "go help [command]" for more information about a command.
+
+Additional help topics:
+
+        c           calling between Go and C
+        buildmode   description of build modes
+        filetype    file types
+        gopath      GOPATH environment variable
+        environment environment variables
+        importpath  import path syntax
+        packages    description of package lists
+        testflag    description of testing flags
+        testfunc    description of testing functions
+
+Use "go help [topic]" for more information about that topic.
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go version
+go version go1.6.3 windows/amd64
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go doc os.Open
+func Open(name string) (*File, error)
+    Open opens the named file for reading. If successful, methods on the
+    returned file can be used for reading; the associated file descriptor has
+    mode O_RDONLY. If there is an error, it will be of type *PathError.
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ echo GOOS
+GOOS
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ echo $GOOS
+$GOOS
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ echo ${GOOS}
+${GOOS}
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go env  ${GOOS}
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ go env GOOS
+windows
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop (master)
+λ
+
+
+
+
+go fmt file.go //Reformat the file 
+
+
+ab -c 10 -n 100 http://127.0.0.1:8080/
+ 
+ 
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\wc (master)
+λ go build
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\myip (master)
+λ go build
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\myip (master)
+λ .\myip.exe
+2.55.70.93
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\euler8 (master)
+λ go build
+
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test
+# _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123
+.\rot13_test.go:4: imported and not used: "fmt"
+FAIL    _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123 [build failed]
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test
+--- FAIL: TestRot13 (0.00s)
+        rot13_test.go:12: Checking "Hello there"
+        rot13_test.go:15: "Uryyb gurer" != "Uryyb Gurer"
+FAIL
+exit status 1
+FAIL    _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       5.046s
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test
+PASS
+ok      _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       4.039s
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test
+PASS
+ok      _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       4.414s
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test
+PASS
+ok      _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       4.387s
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test -bench .
+PASS
+BenchmarkRot13-4         5000000               349 ns/op
+ok      _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       8.426s
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test -run XXX -v -bench
+go test: missing argument for flag bench
+run "go help test" or "go help testflag" for more information
+
+C:\Users\Kobi\Go_projects\GoWorkshop\Go_Workshop\rot123 (master)
+λ go test -run XXX -v -bench .  //Run only the benchmarks
+PASS
+BenchmarkRot13-4         5000000               326 ns/op
+ok      _/C_/Users/Kobi/Go_projects/GoWorkshop/Go_Workshop/rot123       8.569s
+
+
+mkdir vendor/gopkg.in
+
+
